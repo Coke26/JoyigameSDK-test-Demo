@@ -1,0 +1,4 @@
+DemoConfig.xcconfig
+Pods/
+*.xcworkspace
+.DS_Store

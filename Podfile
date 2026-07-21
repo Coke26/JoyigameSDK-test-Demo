@@ -5,5 +5,5 @@ platform :ios, "13.0"
 use_frameworks! :linkage => :static
 
 target "JoyigameSDKDemo" do
-  pod "JoyigameSDK-test", "0.1.0"
+  pod "JoyigameSDK-test", "0.1.1"
 end

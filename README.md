@@ -27,7 +27,7 @@
 source "https://github.com/Coke26/JoyigameSDK-test-Specs.git"
 source "https://cdn.cocoapods.org/"
 
-pod "JoyigameSDK-test", "0.1.0"
+pod "JoyigameSDK-test", "0.1.1"
 ```
 
 Objective-C 导入路径保持正式 SDK 名称：

@@ -20,7 +20,13 @@
 source "https://github.com/Coke26/JoyigameSDK-test-Specs.git"
 source "https://cdn.cocoapods.org/"
 
-pod "JoyigameSDK-test", "0.1.1"
+pod "JoyigameSDK-test"
+```
+
+Demo 不固定 SDK 版本，也不提交 `Podfile.lock`。新 clone 后运行 `pod install --repo-update` 会安装当前最新版本；已安装旧版本时执行：
+
+```bash
+pod update JoyigameSDK-test
 ```
 
 Objective-C 导入路径保持正式 SDK 名称：

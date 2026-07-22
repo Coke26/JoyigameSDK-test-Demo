@@ -14,9 +14,6 @@ targets:
   JoyigameSDKDemo:
     type: application
     platform: iOS
-    configFiles:
-      Debug: DemoConfig.xcconfig
-      Release: DemoConfig.xcconfig
     sources:
       - JoyigameSDKDemo
     settings:

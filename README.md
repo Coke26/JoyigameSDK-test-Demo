@@ -4,14 +4,8 @@
 
 ## 运行步骤
 
-1. 复制本地配置模板：
-
-   ```bash
-   cp DemoConfig.xcconfig.example DemoConfig.xcconfig
-   ```
-
-2. 编辑 `DemoConfig.xcconfig`，填写由 Joyigame 提供的测试参数。该文件已被 `.gitignore` 忽略，禁止提交。
-3. 生成 Xcode 工程并安装 Pod：
+1. 打开 `JoyigameSDKDemo/Info.plist`，填写由 Joyigame 提供的测试参数。仓库中的 `JOYTestGameId`、`JOYTestAppKey`、Facebook 和 Google 字段默认均为空，禁止提交真实值。
+2. 生成 Xcode 工程并安装 Pod：
 
    ```bash
    xcodegen generate
@@ -19,7 +13,7 @@
    open JoyigameSDKDemo.xcworkspace
    ```
 
-4. 使用 `JoyigameSDKDemo` scheme 运行。未配置参数时，Demo 只提示配置缺失，不会请求激活接口。
+3. 使用 `JoyigameSDKDemo` scheme 运行。未配置参数时，Demo 会在控制台和启动弹窗提示填写 `Info.plist`，且不会请求激活接口。
 
 ## SDK 接入
 
@@ -38,5 +32,5 @@ Objective-C 导入路径保持正式 SDK 名称：
 
 ## 安全规则
 
-- 不要提交 `DemoConfig.xcconfig`、任何 appKey、token、账号、Google 配置文件或 Facebook/Google 生产配置。
+- 不要提交任何 appKey、token、账号、Google 配置文件或 Facebook/Google 生产配置。
 - 本仓库只用于验证 CocoaPods 二进制接入；私有 `JoyigameSDKDemo` 联合工程继续用于 SDK 开发调试。

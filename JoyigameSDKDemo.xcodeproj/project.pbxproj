@@ -29,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025D11DA6E2CA0483494236E /* DemoConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DemoConfig.xcconfig; sourceTree = "<group>"; };
 		0435977CFB4663A1AD062581 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		170AB32867127F962D9205BE /* JoyigameSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoyigameSDKDemo.entitlements; sourceTree = "<group>"; };
 		1EFE0AD71A887B501EE9C0D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		23692B4B27103E42A7FA703A = {
 			isa = PBXGroup;
 			children = (
-				AEBB68F6AC38D64407CC93AA /* Demo */,
 				52D77767D26CBA620E93A038 /* JoyigameSDKDemo */,
 				A267B5C2353C74273FEA487B /* JoyigameSDKDemoIntegrationTests */,
 				2B34CE620482D7872CE4EB89 /* Products */,
@@ -98,15 +96,6 @@
 				20BA6D3EFFA8CF1D13AAF553 /* JoyigameSDKDemoIntegrationTests.m */,
 			);
 			path = JoyigameSDKDemoIntegrationTests;
-			sourceTree = "<group>";
-		};
-		AEBB68F6AC38D64407CC93AA /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				025D11DA6E2CA0483494236E /* DemoConfig.xcconfig */,
-			);
-			name = Demo;
-			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +278,6 @@
 		};
 		14C2884E4F32FB185734B1A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025D11DA6E2CA0483494236E /* DemoConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -330,7 +318,6 @@
 		};
 		9DE8E4E889906507272E1DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025D11DA6E2CA0483494236E /* DemoConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

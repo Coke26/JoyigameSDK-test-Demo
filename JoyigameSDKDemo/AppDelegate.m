@@ -43,11 +43,14 @@
     if (!JOYDemoActivationConfigurationIsReady()) {
         NSError *error = [NSError errorWithDomain:@"com.joyigame.sdk.demo"
                                              code:1001
-                                         userInfo:@{NSLocalizedDescriptionKey: @"请配置 DemoConfig.xcconfig 后重新生成工程"}];
+                                         userInfo:@{NSLocalizedDescriptionKey: @"请先在 JoyigameSDKDemo/Info.plist 填写 JOYTestGameId 和 JOYTestAppKey"}];
         NSLog(@"[JoyigameSDKDemo] %@", error.localizedDescription);
         [[NSNotificationCenter defaultCenter] postNotificationName:JOYDemoActivationDidFinishNotification
                                                             object:nil
                                                           userInfo:@{ @"error": error }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentConfigurationRequiredAlert];
+        });
         return;
     }
 
@@ -72,6 +75,14 @@
                                                             object:nil
                                                           userInfo:@{@"config": config}];
     }];
+}
+
+- (void)presentConfigurationRequiredAlert {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"需要配置 SDK 参数"
+                                                                             message:@"请在 JoyigameSDKDemo/Info.plist 填写 JOYTestGameId 和 JOYTestAppKey，然后重新运行 Demo。"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
+    [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (BOOL)application:(UIApplication *)application

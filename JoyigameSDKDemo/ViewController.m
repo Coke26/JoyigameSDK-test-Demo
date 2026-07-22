@@ -73,7 +73,7 @@
 
 - (void)handleActivationButtonTapped:(UIButton *)sender {
     if (!JOYDemoActivationConfigurationIsReady()) {
-        self.statusLabel.text = @"请配置 DemoConfig.xcconfig 后重新生成工程";
+        self.statusLabel.text = @"请先在 JoyigameSDKDemo/Info.plist 填写 JOYTestGameId 和 JOYTestAppKey";
         return;
     }
 

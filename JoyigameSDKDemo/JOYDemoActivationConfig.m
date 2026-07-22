@@ -2,6 +2,7 @@
 
 NSNotificationName const JOYDemoActivationDidFinishNotification = @"JOYDemoActivationDidFinishNotification";
 
+// 公开 Demo 不依赖本地 xcconfig，直接读取 Info.plist 中由接入方填写的测试参数。
 static NSString *JOYDemoConfigurationValue(NSString *key) {
     id value = [[NSBundle mainBundle] objectForInfoDictionaryKey:key];
     return [value isKindOfClass:NSString.class] ? value : @"";

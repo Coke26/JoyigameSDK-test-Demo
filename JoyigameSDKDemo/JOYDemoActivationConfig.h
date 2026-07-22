@@ -2,13 +2,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// 公开 Demo 从 Info.plist 读取由本地 xcconfig 注入的测试 gameId。
+/// 公开 Demo 从 Info.plist 读取测试 gameId；仓库默认值为空，接入方在本地填写。
 FOUNDATION_EXPORT NSString *JOYDemoActivationGameId(void);
 
-/// 公开 Demo 从 Info.plist 读取由本地 xcconfig 注入的测试 appKey。
+/// 公开 Demo 从 Info.plist 读取测试 appKey；仓库默认值为空，接入方在本地填写。
 FOUNDATION_EXPORT NSString *JOYDemoActivationAppKey(void);
 
-/// 判断本地 DemoConfig.xcconfig 是否已替换所有占位符，未完成配置时不得请求后端。
+/// 判断 Info.plist 中的激活参数是否已填写，未完成配置时不得请求后端。
 FOUNDATION_EXPORT BOOL JOYDemoActivationConfigurationIsReady(void);
 
 FOUNDATION_EXPORT NSNotificationName const JOYDemoActivationDidFinishNotification;

@@ -19,25 +19,25 @@
   <key>CFBundleVersion</key>
   <string>1</string>
   <key>FacebookAppID</key>
-  <string>$(FACEBOOK_APP_ID)</string>
+  <string></string>
   <key>FacebookClientToken</key>
-  <string>$(FACEBOOK_CLIENT_TOKEN)</string>
+  <string></string>
   <key>JOYTestAppKey</key>
-  <string>$(JOY_TEST_APP_KEY)</string>
+  <string></string>
   <key>JOYTestGameId</key>
-  <string>$(JOY_TEST_GAME_ID)</string>
+  <string></string>
   <key>CFBundleURLTypes</key>
   <array>
     <dict>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>$(FACEBOOK_URL_SCHEME)</string>
+        <string></string>
       </array>
     </dict>
     <dict>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>$(GOOGLE_URL_SCHEME)</string>
+        <string></string>
       </array>
     </dict>
   </array>
@@ -64,7 +64,7 @@
     <key>google</key>
     <dict>
       <key>clientID</key>
-      <string>$(GOOGLE_CLIENT_ID)</string>
+      <string></string>
     </dict>
   </dict>
   <key>UILaunchStoryboardName</key>

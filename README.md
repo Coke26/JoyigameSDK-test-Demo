@@ -9,9 +9,10 @@
 
    ```bash
    pod install --repo-update
+   open JoyigameSDKDemo.xcworkspace
    ```
 
-3. 在 Xcode 中打开生成的 `JoyigameSDKDemo.xcworkspace`，使用 `JoyigameSDKDemo` scheme 运行。未配置参数时，Demo 会在控制台和启动弹窗提示填写 `Info.plist`，且不会请求激活接口。
+3. 必须使用 `JoyigameSDKDemo.xcworkspace`（不能使用 `.xcodeproj`）打开并运行 `JoyigameSDKDemo` scheme。未配置参数时，Demo 会在控制台和启动弹窗提示填写 `Info.plist`，且不会请求激活接口。
 
 ## SDK 接入
 

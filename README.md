@@ -5,10 +5,9 @@
 ## 运行步骤
 
 1. 打开 `JoyigameSDKDemo/Info.plist`，填写由 Joyigame 提供的测试参数。仓库中的 `JOYTestGameId`、`JOYTestAppKey`、Facebook 和 Google 字段默认均为空，禁止提交真实值。
-2. 生成 Xcode 工程并安装 Pod：
+2. 安装 Pod 并打开 Workspace：
 
    ```bash
-   xcodegen generate
    pod install --repo-update
    open JoyigameSDKDemo.xcworkspace
    ```
